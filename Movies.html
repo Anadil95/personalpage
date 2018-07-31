@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+     text-align: center;
+    font-size: 10px;
+}
+
+/* Style the header */
+header {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: Red;
+}
+
+
+
+article {
+    float: left;
+    padding: 50px;
+    width: 100%;
+    background-color: #f1f1f1;
+    
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    background-color: White;
+    padding: 5px;
+    text-align: center;
+    color: Red;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>Series</h2>
+ 
+</header>
+ 
+ 
+<section>
+
+  
+  <article> 
+  
+   <div class="row">
+  <div class="column">
+    <img src="seinfeld.jpg" alt="Snow" style="width:90%">
+  </div>
+  <div class="column">
+    <img src="theRanch.jpg" alt="Forest" style="width:90%">
+  </div>
+  <div class="column">
+    <img src="https://m.media-amazon.com/images/M/MV5BNDVkYjU0MzctMWRmZi00NTkxLTgwZWEtOWVhYjZlYjllYmU4XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UY268_CR0,0,182,268_AL_.jpg" alt="Mountains" style="width:90%">
+  </div>
+</div>
+
+  <div class="row">
+  <div class="column">
+    <img src="SHERLOCK.jpg" alt="Snow" style="width:90%">
+  </div>
+  <div class="column">
+    <img src="peaky blinders.jpg" alt="Forest" style="width:90%">
+  </div>
+  <div class="column">
+    <img src="P5260.jpg" alt="Mountains" style="width:90%">
+  </div>
+</div> 
+
+
+
+
+</article>
+</section>
+
+<footer>
+  <p>More coming soon...</p>
+</footer>
+
+</body>
+</html>
+
