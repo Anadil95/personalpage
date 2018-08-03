@@ -38,6 +38,8 @@
   background-color: rgba(255,255,224,.5);
   
 }
+
+
 </style>
 
 <style>
@@ -47,14 +49,28 @@
 }
 
 .text-block {
-   .center-btn { text-align: center }
-
+position: absolute;
+    top: 60px;
+    right: 10px;
   background-color: rgba(184,184,184,.25);
     color: white;
     padding-left: 20px;
     padding-right: 20px;
 }
+
+@media screen and (max-width: 600px) {
+ 
+
+.text-block {
+    font-size: 10px;
+
+}
+}
 </style>
+
+
+
+
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -105,6 +121,14 @@
   color: white;
 }
 
+html { 
+  background: url(https://static.comicvine.com/uploads/original/6/69951/1590815-830px_simba.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 
 </style>
 
@@ -114,7 +138,6 @@
 
 
 <div class="container">
-  <img src="https://static.comicvine.com/uploads/original/6/69951/1590815-830px_simba.jpg" alt="SIMBA" style="width:100%;">
   <div id="mySidenav" class="sidenav">
   <a href="Ach.html" id="about">Achievements</a>
    <a href="Movies.html" id="blog">Entertainment</a>
