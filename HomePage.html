@@ -2,7 +2,13 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+   <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  
+  
 
 <style>
 #mySidenav a {
@@ -135,9 +141,8 @@ html {
 
 </head>
 <body>
-
-
-<div class="container">
+ 
+ <div class="container"> 
   <div id="mySidenav" class="sidenav">
   <a href="Ach.html" id="about">Achievements</a>
    <a href="Movies.html" id="blog">Entertainment</a>
@@ -148,7 +153,15 @@ html {
 
 
   <div class="text-block">
-    
+      <div id="root"></div>
+    <script type="text/babel">
+
+      ReactDOM.render(
+        <p>Welcome To My page!</p>,
+        document.getElementById('root')
+      );
+
+    </script>
 <div class="card">
       <div class="container">
         <h2>Anadil Alsaqabi.</h2>
@@ -158,6 +171,9 @@ html {
         </p>
       </div>
   </div>
+  <p> <br> # Press like if you liked my page!</P>
+     <div id="like_button_container"></div>
+<script src="like_button.js"></script>
 </div>
 
 
